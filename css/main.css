@@ -3531,7 +3531,6 @@ button:active {
   background-size: contain;
   width: 100%;
   height: 700px;
-  outline: 1px solid blue;
   position: absolute;
   top: -295px;
   left: 0;
