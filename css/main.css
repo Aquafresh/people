@@ -3096,7 +3096,7 @@ button:active {
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: 10;
+  z-index: 0;
 }
 
 .mainSection:after {
