@@ -1,0 +1,292 @@
+.pageSection
+  position: relative
+  z-index: 1
+
+  &--right
+
+    .pageSectionRow
+
+      flex-direction: row-reverse
+
+  &--padding
+
+    padding-bottom: 200px
+
+  &--blue
+
+    background-color: $blueLight
+
+  &Title
+
+    color: $blueDark
+    font-family: $base-font-family
+    font-style: normal
+    font-weight: bold
+    font-size: 60px
+    line-height: 80px
+    text-align: center
+
+  &Text
+    font-family: $base-font-family-light
+    font-style: normal
+    font-weight: normal
+    font-size: 32px
+    line-height: 36px
+    color: #fff
+
+    &--development
+
+      background: url('../img/shape-5.svg') no-repeat 50% 50%
+      width: 435px
+      height: 288px
+      padding: 81px 20px 79px 56px
+      position: absolute
+      bottom: -50px
+      right: 260px
+      z-index: 5
+
+    &--clients
+
+      background: url('../img/shape-5.svg') no-repeat 50% 50%
+      width: 435px
+      height: 288px
+      padding: 81px 20px 79px 56px
+      z-index: 5
+      position: absolute
+      left: 260px
+      bottom: -450px
+
+    &--analytics
+
+      background: url('../img/shape-5.svg') no-repeat 50% 50%
+      width: 435px
+      height: 288px
+      padding: 81px 20px 79px 56px
+      z-index: 5
+      position: absolute
+      left: 260px
+      bottom: -400px
+
+
+    &--clients-two,
+    &--analytics-two
+
+      background: url('../img/shape-5.svg') no-repeat 50% 50%
+      width: 435px
+      height: 288px
+      padding: 81px 20px 79px 56px
+      bottom: 150px
+      left: -80px
+      z-index: 5
+      position: absolute
+
+
+
+  &Img
+
+    position: relative
+    z-index: 1
+    width: 100%
+    height: 100%
+
+    &:before
+
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      display: block
+      width: 100%
+      height: 100%
+
+  &Note
+
+    font-family: $base-font-family-light
+    font-style: normal
+    font-weight: normal
+    font-size: 28px
+    line-height: 36px
+    padding: 0 20px
+    position: relative
+    z-index: 1
+    margin-bottom: 70px
+    color: $blueDark
+
+    &:before
+      content: ''
+      display: block
+      width: 3px
+      height: 40px
+      background: $blueDark
+      position: absolute
+      left: 0
+      top: 5px
+
+  &--columns
+
+    padding-top: 100px
+    padding-bottom: 200px
+
+    .pageSection
+
+      &SmallCircle
+
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        margin: 0 auto
+
+      &Title
+        margin-bottom: 60px
+        text-align: left
+
+      &Note
+
+        width: 560px
+
+  &--development
+
+    padding-top: 150px
+
+    .pageSectionImg
+
+      &:before
+        background: url('../img/mozart.png') no-repeat 100% 0%
+        top: -680px
+        right: 0
+        width: 967px
+        height: 1180px
+
+
+  &--clients
+
+    padding-bottom: 400px
+    z-index: 10
+
+    .pageSectionImg
+
+      &:before
+        background: url('../img/monalisa.png') no-repeat 100% 0%
+        top: -320px
+        right: 0
+        left: auto
+        width: 967px
+        height: 1180px
+
+    .pageSectionNote
+
+      margin-top: 160px
+
+    &-two
+
+
+     .pageSectionNote
+
+        margin-top: 160px
+
+        &+.pageSectionNote
+          margin-top: 0
+
+     .pageSectionImg
+
+        &:before
+          background: url('../img/statue_5.png') no-repeat 100% 0%
+          top: auto
+          left: 0
+          width: 921px
+          height: 1182px
+          bottom: 220px
+
+     position: relative
+     z-index: 20
+
+  &--analytics
+
+    padding-bottom: 450px
+    z-index: 10
+
+    .pageSectionImg
+
+      &:before
+        background: url('../img/dali.png') no-repeat 100% 0%
+        top: -320px
+        right: 0
+        left: auto
+        width: 773px
+        height: 1055px
+
+    .pageSectionNote
+
+      margin-top: 160px
+
+    &-two
+
+     .pageSectionNote
+
+        margin-top: 160px
+
+        & + .pageSectionNote
+          margin-top: 0
+
+     .pageSectionImg
+
+        &:before
+          background: url('../img/statue_4.png') no-repeat 100% 0%
+          top: auto
+          left: 0
+          width: 921px
+          height: 1182px
+          bottom: 130px
+
+     position: relative
+     z-index: 20
+
+  &--about
+
+    padding-bottom: 450px
+    z-index: 10
+
+    .pageSectionImg
+
+      &:before
+        background: url('../img/about.png') no-repeat 100% 0%
+        top: -320px
+        right: 0
+        left: auto
+        width: 776px
+        height: 1308px
+
+    &-two
+
+      position: relative
+      z-index: 20
+
+      .pageSectionTitle
+        text-align: left
+        margin-bottom: 65px
+
+
+      .pageSection--about-two-slider
+        position: relative
+        z-index: 10
+        top: -270px
+
+        .owl-nav
+
+
+    &-three
+
+      .pageSectionTitle
+
+        text-align: left
+        margin-bottom: 70px
+
+      .pageSectionNote
+
+        margin-bottom: 50px
+
+      .categorySectionBtn
+
+        padding: 20px 30px
+        margin-top: 50px

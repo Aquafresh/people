@@ -1,0 +1,14 @@
+<svg width="1429" height="846" viewBox="0 0 1429 846" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1429" height="846">
+<rect width="1429" height="846" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1430 397H1250C1250 275.497 1151.5 177 1030 177C908.497 177 810 275.497 810 397V441C810 661.914 630.914 841 410 841C189.086 841 10 661.914 10 441V397H190V441C190 562.503 288.497 661 410 661C531.503 661 630 562.503 630 441V397C630 176.086 809.086 -3 1030 -3C1250.91 -3 1430 176.086 1430 397Z" fill="#00B8FF" fill-opacity="0.06"/>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="478" y="356" width="385" height="489">
+<rect x="478" y="356" width="385" height="489" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1430 397H1250C1250 275.497 1151.5 177 1030 177C908.497 177 810 275.497 810 397V441C810 661.914 630.914 841 410 841C189.086 841 10 661.914 10 441V397H190V441C190 562.503 288.497 661 410 661C531.503 661 630 562.503 630 441V397C630 176.086 809.086 -3 1030 -3C1250.91 -3 1430 176.086 1430 397Z" fill="#82E0FC" style="mix-blend-mode:color"/>
+</g>
+</g>
+</svg>

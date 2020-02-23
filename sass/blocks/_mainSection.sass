@@ -1,0 +1,208 @@
+.mainSection
+  background: linear-gradient(236.2deg, #012641 6.44%, #174C72 99.96%)
+  height: 100vh
+  position: relative
+  z-index: 1
+
+  &Logo
+    padding-top: 20px
+    padding-left: 130px
+    display: block
+
+
+  &--logo:before
+    content: ''
+    background: url('../img/big_logo_head.svg') no-repeat 0% 50%
+    top: 0
+    left: 0
+    display: block
+    height: 100%
+    width: 100%
+    position: absolute
+    z-index: 10
+
+  &:after
+
+    content: ''
+    background: url('../img/header-circle.svg') no-repeat 100% 0%
+    top: 0
+    right: 0
+    display: block
+    height: 450px
+    width: 450px
+    position: absolute
+    z-index: 0
+
+  &--page
+
+    height: auto
+    z-index: 5
+
+    &--circle
+
+      &:before
+
+        content: ''
+        display: block
+        width: 800px
+        height: 800px
+        position: absolute
+        background: url('../img/circle_header.svg') no-repeat 50% 50%
+        background-size: cover
+        top: 150px
+        left: -180px
+
+
+.mainSectionHeader
+  padding-top: 20px
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 320px
+  position: relative
+  z-index: 50
+
+
+.mainHeaderNav a
+  font-family: $base-font-family
+  font-style: normal
+  font-weight: normal
+  font-size: 20px
+  line-height: 24px
+  margin-left: 53px
+  color: #FFFFFF
+  transition: all linear 0.2s
+  position: relative
+  z-index: 1
+
+  &:after
+    content: ''
+    width: 0
+    height: 3px
+    background-color: $greenLight
+    transition: all linear 0.2s
+    position: absolute
+    bottom: -8px
+    left: 0
+
+  &:hover
+
+    color: $greenLight
+
+  &.active
+
+    color: $greenLight
+
+    &:after
+
+      width: 56px
+
+.mainSectionText
+  width: 650px
+  min-height: 420px
+  color: #fff
+  background: url('../img/shape-1.svg') no-repeat 50% 50%
+  background-size: cover
+  padding: 87px 32px 102px 115px
+
+  h1
+
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 100%
+    margin-bottom: 28px
+
+  p
+
+    font-style: normal
+    font-weight: normal
+    font-family: $base-font-family-light
+    font-size: 28px
+    line-height: 30px
+
+
+.mainSectionFooter
+
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  padding-left: 130px
+
+
+.mainSectionTitle
+
+  font-family: $base-font-family-medium
+  font-style: normal
+  font-weight: bold
+  font-size: 72px
+  line-height: 100%
+  color: $greenLight
+  flex: 0 0 auto
+  padding-left: 130px
+  margin-bottom: 30px
+  display: block
+
+.mainSectionSuptext
+
+  font-family: $base-font-family-light
+  font-style: normal
+  font-weight: normal
+  font-size: 28px
+  line-height: 36px
+  color: #fff
+  padding-left: 130px
+
+  & + .mainSectionSuptext
+    padding-bottom: 30px
+
+
+.mainSectionFooter
+  display: flex
+  width: 100%
+  margin: 0 auto
+  align-items: flex-end
+  padding-bottom: 50px
+
+  &Title
+
+    font-family: $base-font-family-medium
+    font-style: normal
+    font-weight: bold
+    font-size: 72px
+    line-height: 100%
+    color: $greenLight
+    flex: 0 0 auto
+    padding-left: 130px
+    margin-bottom: 50px
+
+  &Text
+
+    font-family: $base-font-family-light
+    font-style: normal
+    font-weight: normal
+    font-size: 28px
+    line-height: 110%
+    color: #fff
+    max-width: 500px
+
+.mainSectionSocial
+  padding-top: 5px
+
+  li
+    margin-bottom: 30px
+
+    &:hover img
+      transform: scale(1.1)
+
+  a
+    color: #fff
+    font-size: 28px
+    display: block
+
+    img
+      transition: all linear 0.2s
+
+
+
+  span
+    padding-left: 30px
