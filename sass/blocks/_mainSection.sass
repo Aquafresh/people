@@ -6,8 +6,9 @@
 
   &Logo
     padding-top: 20px
-    padding-left: 130px
+    margin-left: 130px
     display: block
+    width: 122px
 
 
   &--logo:before
@@ -44,13 +45,13 @@
 
         content: ''
         display: block
-        width: 800px
-        height: 800px
+        width: 760px
+        height: 760px
         position: absolute
         background: url('../img/circle_header.svg') no-repeat 50% 50%
-        background-size: cover
+        background-size: initial
         top: 150px
-        left: -180px
+        left: 0px
 
 
 .mainSectionHeader
@@ -61,6 +62,9 @@
   position: relative
   z-index: 50
 
+.mainHeaderNavMobileClose
+
+  display: none
 
 .mainHeaderNav a
   font-family: $base-font-family
@@ -206,3 +210,6 @@
 
   span
     padding-left: 30px
+
+.mainSectionHeaderBtn
+  display: none
