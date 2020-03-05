@@ -217,28 +217,41 @@
 	.owl-next
 		&:before
 
-			content: '⟶'
+			content: ''
+			background: url('../img/arrow-right.svg') no-repeat 50% 50%
 
 	.owl-prev
 		&:before
 
+			content: ''
+			background: url('../img/arrow-left.svg') no-repeat 50% 50%
+
+.categorySectionSlider
+	.owl-next
+		&:before
+			content: '⟶'
+			background: none
+
+
+	.owl-prev
+		&:before
 			content: '⟵'
+			background: none
+
 
 
 .categorySection--analytics
 
-	.owl-nav,
+
 	.owl-dots
 		width: 100%
-		margin-left: 0
-		justify-content: center
+		margin-left: 70px
+		justify-content: flex-start
 
 	.owl-nav
 		width: 280px
 		justify-content: space-between
-		margin: 0 auto
 		left: 0
-		right: 0
 
 .categorySection--aboutUs
 

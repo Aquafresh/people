@@ -4,6 +4,14 @@
   position: relative
   z-index: 1
 
+  .container--stretch
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: stretch
+    height: 100%
+
+
   &Logo
     padding-top: 20px
     margin-left: 130px
@@ -21,6 +29,7 @@
     width: 100%
     position: absolute
     z-index: 0
+    background-size: contain
 
   &:after
 
@@ -120,7 +129,6 @@
 
     font-style: normal
     font-weight: normal
-    font-family: $base-font-family-light
     font-size: 28px
     line-height: 30px
 
@@ -148,7 +156,6 @@
 
 .mainSectionSuptext
 
-  font-family: $base-font-family-light
   font-style: normal
   font-weight: normal
   font-size: 28px
@@ -173,7 +180,7 @@
     font-style: normal
     font-weight: bold
     font-size: 72px
-    line-height: 100%
+    line-height: 68px
     color: $greenLight
     flex: 0 0 auto
     padding-left: 130px
@@ -181,7 +188,6 @@
 
   &Text
 
-    font-family: $base-font-family-light
     font-style: normal
     font-weight: normal
     font-size: 28px

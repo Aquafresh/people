@@ -69,14 +69,19 @@
 
   .categorySection
 
+    &Btn
+      padding: 17px 53px
+      font-size: 16px
+      line-height: 24px
+
     &Title
 
       font-size: 38px
 
     &Text
 
-      font-size: 16px
-      line-height: 24px
+      font-size: 18px
+      line-height: 26px
 
     &--development
 
@@ -201,6 +206,12 @@
 
   .categorySection
 
+    &Btn
+      padding: 17px 0px
+      font-size: 20px
+      line-height: 28px
+      width: 100%
+
     &Title
 
       font-size: 38px
@@ -216,6 +227,8 @@
       padding-right: 60px
 
     &--development
+      .categorySectionTitle
+        padding-top: 40px !important
 
       .categorySection
 
@@ -234,12 +247,12 @@
       .categorySectionText
 
         margin: 0 auto
-        left: 0
+        left: 20px
         top: -100px
-        width: calc(320px - 75px)
+        width: calc(320px - 40px)
         min-height: auto
-        padding: 33px 36px
-        background-size: contain
+        padding: 46px 36px 33px 37px
+        background-size: cover
         position: relative
 
       .categorySectionSlider
@@ -253,8 +266,6 @@
 
     &--analytics
 
-      .row
-        flex-direction: column-reverse
 
       .categorySection
 
@@ -298,4 +309,45 @@
 
       .categorySectionTitle
         padding-bottom: 30px !important
+
+@media (max-width: $container-sm-max-width)
+
+  .categorySection
+
+    .categorySectionTitle
+      padding-bottom: 30px !important
+
+    .categorySectionSlider
+
+      margin: 0 auto
+      margin-bottom: 45px
+
+    .categorySectionBtn
+
+      margin: 0 auto
+      padding-left: 10px
+      padding-right: 10px
+
+    .categorySectionSliderItem
+
+      font-size: 24px
+      line-height: 30px
+    &--development
+      .categorySectionTitle
+
+        padding-top: 0 !important
+    &--analytics
+
+      .row
+        flex-direction: column-reverse
+
+    &--aboutUs
+
+      .categorySectionBtn
+        padding-left: 0
+        padding-right: 0
+        letter-spacing: -1px
+        margin-top: 45px
+        margin-bottom: 45px
+
 

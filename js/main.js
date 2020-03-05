@@ -32444,9 +32444,21 @@ $.magnificPopup.registerModule(RETINA_NS, {
     loop:true,
     margin:10,
     items:1,
-    nav:true,
-    dots:true,
 
+    responsive:{
+      0:{
+        nav:false,
+        dots:false,
+      },
+      768:{
+        nav:true,
+        dots:true,
+      },
+      1000:{
+        nav:true,
+        dots:true,
+      }
+    }
   })
 
 
