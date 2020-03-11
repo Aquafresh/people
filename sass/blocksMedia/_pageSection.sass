@@ -17,6 +17,7 @@
 
     font-size: 48px
     line-height: 56px
+    font-family: $base-font-family-medium
 
   .pageSectionNote
 
@@ -131,9 +132,19 @@
   .pageSection--about
 
     &-two
+      padding-bottom: 50px
+
+      &-wrap
+
+        &:before,
+        &:after
+          width: 400px
+          height: 400px
+          background-position: 100% 100%
+
 
       .pageSection--about-two-slider
-        top: -200px
+        top: 0px
 
 @media (max-width: $grid-breakpoints-md)
 
@@ -197,6 +208,14 @@
 
   .pageSection--about-two
     padding-bottom: 50px
+
+
+
+    &-wrap
+
+      &:before,
+      &:after
+        display: none
 
     .pageSection--about-two-slider
 

@@ -260,6 +260,29 @@
       position: relative
       z-index: 20
 
+      &-wrap
+
+        &:before,
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          background: url("../img/circle_header.svg") no-repeat 0% 0%
+          width: 600px
+          height: 600px
+          background-size: contain
+          z-index: 0
+
+        &:before
+
+          top: -1000px
+          right: 0
+          background-position: 300px 0
+
+        &:after
+          top: 0
+          left: -300px
+
       .pageSectionTitle
         text-align: left
         margin-bottom: 65px
@@ -268,7 +291,7 @@
       .pageSection--about-two-slider
         position: relative
         z-index: 10
-        top: -270px
+        top: -80px
 
 
     &-three

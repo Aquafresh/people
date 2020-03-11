@@ -64,9 +64,8 @@
   console.log('.existElem5',existElem5.length)
 
   if(existElem5.length){
-    var tileLayer = new L.TileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-      'attribution': 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-    });
+    var tileLayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {foo: 'bar', attribution: 'Map data &copy; <a' +
+        ' href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'})
 
 
     var greenIcon = L.icon({

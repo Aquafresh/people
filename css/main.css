@@ -3345,7 +3345,7 @@ button:active {
 
 .categorySectionTitle {
   color: #012641;
-  font-family: "FuturaPT-Book", Arial, sans-serif;
+  font-family: "FuturaPT-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -3858,6 +3858,28 @@ button:active {
   z-index: 20;
 }
 
+.pageSection--about-two-wrap:before, .pageSection--about-two-wrap:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url("../img/circle_header.svg") no-repeat 0% 0%;
+  width: 600px;
+  height: 600px;
+  background-size: contain;
+  z-index: 0;
+}
+
+.pageSection--about-two-wrap:before {
+  top: -1000px;
+  right: 0;
+  background-position: 300px 0;
+}
+
+.pageSection--about-two-wrap:after {
+  top: 0;
+  left: -300px;
+}
+
 .pageSection--about-two .pageSectionTitle {
   text-align: left;
   margin-bottom: 65px;
@@ -3866,7 +3888,7 @@ button:active {
 .pageSection--about-two .pageSection--about-two-slider {
   position: relative;
   z-index: 10;
-  top: -270px;
+  top: -80px;
 }
 
 .pageSection--about-three {
@@ -4038,7 +4060,7 @@ button:active {
     background-color: #fff;
   }
   .mainSectionHeaderBtn span:before {
-    margin-top: 9px;
+    margin-top: 8px;
   }
   .mainSectionHeaderBtn span:after {
     margin-top: -17px;
@@ -4057,6 +4079,7 @@ button:active {
   }
   .mainSectionFooterTitle {
     padding-left: 0;
+    font-size: 62px;
   }
   .mainSectionText {
     padding: 40px 10px 27px 49px;
@@ -4138,7 +4161,7 @@ button:active {
 
 @media (max-width: 1200px) {
   .categorySectionTitle {
-    font-size: 58px;
+    font-size: 54px;
   }
   .categorySectionText {
     font-size: 26px;
@@ -4424,6 +4447,7 @@ button:active {
   .pageSectionTitle {
     font-size: 48px;
     line-height: 56px;
+    font-family: "FuturaPT-Bold", Arial, sans-serif;
   }
   .pageSectionNote {
     font-size: 22px;
@@ -4500,8 +4524,16 @@ button:active {
     background-position: 0 0;
     top: -290px;
   }
+  .pageSection--about-two {
+    padding-bottom: 50px;
+  }
+  .pageSection--about-two-wrap:before, .pageSection--about-two-wrap:after {
+    width: 400px;
+    height: 400px;
+    background-position: 100% 100%;
+  }
   .pageSection--about-two .pageSection--about-two-slider {
-    top: -200px;
+    top: 0px;
   }
 }
 
@@ -4558,6 +4590,9 @@ button:active {
   }
   .pageSection--about-two {
     padding-bottom: 50px;
+  }
+  .pageSection--about-two-wrap:before, .pageSection--about-two-wrap:after {
+    display: none;
   }
   .pageSection--about-two .pageSection--about-two-slider {
     top: 0;
