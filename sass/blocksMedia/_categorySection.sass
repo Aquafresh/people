@@ -1,4 +1,4 @@
-@media (max-width: $grid-breakpoints-xl)
+@media (max-width: $grid-breakpoints-xxl)
   .categorySection
 
     &Title
@@ -19,7 +19,7 @@
 
       margin-top: 30px
 
-    &--development,
+    &--development
 
       .categorySectionTitle
 
@@ -30,10 +30,6 @@
 
         height: 640px
         background-size: contain
-
-      .categorySectionText
-
-        right: 25px
 
       .categorySectionSlider
         margin-bottom: 45px
@@ -64,6 +60,17 @@
 
         right: -30px
 
+    &--aboutUs
+      &:after
+        transform: translateX(230px)
+
+@media (max-width: $grid-breakpoints-xl)
+  .categorySection
+    &--development
+
+      .categorySectionText
+
+        right: 25px
 
 @media (max-width: $grid-breakpoints-lg)
 
@@ -178,6 +185,11 @@
           line-height: 24px
 
     &--aboutUs
+      &:after
+        transform: translateX(200px)
+        width: 400px
+        height: 400px
+        top: -340px
 
       .categorySectionTitle
 
@@ -214,9 +226,9 @@
 
     &Title
 
-      font-size: 38px
+      font-size: 36px
       text-indent: 0 !important
-      line-height: 44px
+      line-height: 42px
       text-align: left
       padding-top: 0  !important
       padding-bottom: 120px  !important
@@ -306,6 +318,11 @@
             background-position: 90% 100%
 
     &--aboutUs
+      &:after
+        transform: translateX(0px)
+        width: 400px
+        height: 400px
+        top: 50px
 
       .categorySectionTitle
         padding-bottom: 30px !important

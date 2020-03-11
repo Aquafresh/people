@@ -3165,8 +3165,8 @@ button:active {
   font-family: "FuturaPT-Book", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 28px;
   margin-left: 53px;
   color: #FFFFFF;
   -webkit-transition: all linear 0.2s;
@@ -3451,6 +3451,7 @@ button:active {
 
 .categorySection--analytics {
   padding-top: 95px;
+  padding-bottom: 65px;
   position: relative;
   z-index: 9;
 }
@@ -3547,6 +3548,24 @@ button:active {
   z-index: 7;
 }
 
+.categorySection--aboutUs:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url("../img/circle_header.svg") no-repeat 0% 0%;
+  width: 600px;
+  height: 600px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  -webkit-transform: translateX(300px);
+      -ms-transform: translateX(300px);
+          transform: translateX(300px);
+  background-size: contain;
+  z-index: 0;
+  top: -500px;
+}
+
 .categorySection--aboutUs .categorySection--aboutUs-wave {
   position: relative;
   z-index: 10;
@@ -3625,12 +3644,16 @@ button:active {
 
 .pageSectionTitle {
   color: #012641;
-  font-family: "FuturaPT-Book", Arial, sans-serif;
+  font-family: "FuturaPT-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 80px;
   text-align: center;
+}
+
+.pageSectionEmail {
+  font-size: 22px;
 }
 
 .pageSectionText {
@@ -3870,9 +3893,9 @@ button:active {
 }
 
 .pageSection--about-two-wrap:before {
-  top: -1000px;
+  top: -680px;
   right: 0;
-  background-position: 300px 0;
+  background-position: 0px 0;
 }
 
 .pageSection--about-two-wrap:after {
@@ -4122,6 +4145,9 @@ button:active {
     display: none;
   }
   .mainSectionHeader {
+    margin-bottom: 35px;
+  }
+  .mainSection--logo .mainSectionHeader {
     margin-bottom: 100px;
   }
   .mainSection--logo:before {
@@ -4159,7 +4185,7 @@ button:active {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1450px) {
   .categorySectionTitle {
     font-size: 54px;
   }
@@ -4182,9 +4208,6 @@ button:active {
     height: 640px;
     background-size: contain;
   }
-  .categorySection--development .categorySectionText {
-    right: 25px;
-  }
   .categorySection--development .categorySectionSlider {
     margin-bottom: 45px;
   }
@@ -4205,6 +4228,17 @@ button:active {
   }
   .categorySection--clients .categorySectionText {
     right: -30px;
+  }
+  .categorySection--aboutUs:after {
+    -webkit-transform: translateX(230px);
+        -ms-transform: translateX(230px);
+            transform: translateX(230px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .categorySection--development .categorySectionText {
+    right: 25px;
   }
 }
 
@@ -4301,6 +4335,14 @@ button:active {
     font-size: 16px;
     line-height: 24px;
   }
+  .categorySection--aboutUs:after {
+    -webkit-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+            transform: translateX(200px);
+    width: 400px;
+    height: 400px;
+    top: -340px;
+  }
   .categorySection--aboutUs .categorySectionTitle {
     padding-top: 20px;
     margin-bottom: 20px;
@@ -4327,9 +4369,9 @@ button:active {
     width: 100%;
   }
   .categorySectionTitle {
-    font-size: 38px;
+    font-size: 36px;
     text-indent: 0 !important;
-    line-height: 44px;
+    line-height: 42px;
     text-align: left;
     padding-top: 0  !important;
     padding-bottom: 120px  !important;
@@ -4394,6 +4436,14 @@ button:active {
     height: 600px;
     top: -100px;
     background-position: 90% 100%;
+  }
+  .categorySection--aboutUs:after {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+    width: 400px;
+    height: 400px;
+    top: 50px;
   }
   .categorySection--aboutUs .categorySectionTitle {
     padding-bottom: 30px !important;
@@ -8710,7 +8760,8 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
   left: 0;
 }
 
-.categorySection--aboutUs .owl-nav {
+.categorySection--aboutUs .owl-nav,
+.pageSection--about-two-slider .owl-nav {
   top: 50%;
   width: 100%;
   margin-top: -28px;
@@ -8718,7 +8769,9 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 
 .categorySection--aboutUs .owl-nav .owl-next:before,
-.categorySection--aboutUs .owl-nav .owl-prev:before {
+.categorySection--aboutUs .owl-nav .owl-prev:before,
+.pageSection--about-two-slider .owl-nav .owl-next:before,
+.pageSection--about-two-slider .owl-nav .owl-prev:before {
   background-color: #012641;
   color: #82E0FC;
   -webkit-transition: all linear 0.2s;
@@ -8732,7 +8785,9 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 
 .categorySection--aboutUs .owl-nav .owl-next:hover:before,
-.categorySection--aboutUs .owl-nav .owl-prev:hover:before {
+.categorySection--aboutUs .owl-nav .owl-prev:hover:before,
+.pageSection--about-two-slider .owl-nav .owl-next:hover:before,
+.pageSection--about-two-slider .owl-nav .owl-prev:hover:before {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
