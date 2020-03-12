@@ -8,7 +8,6 @@
   .pageSection--columns
 
 
-
     .pageSectionNote
       width: auto
 
@@ -35,6 +34,13 @@
   .pageSection--about
 
     padding-bottom: 450px
+
+  .pageSection--about-two-wrap:after
+    top: 0
+  .pageSection--about-two-wrap:before
+    top: -720px
+
+
 
 @media (max-width: $grid-breakpoints-lg)
 
@@ -146,6 +152,12 @@
       .pageSection--about-two-slider
         top: 0px
 
+  .pageSection--about-two-wrap:after
+    top: 100px
+  .pageSection--about-two-wrap:before
+    top: -320px
+
+
 @media (max-width: $grid-breakpoints-md)
 
   .pageSectionText
@@ -208,7 +220,6 @@
 
   .pageSection--about-two
     padding-bottom: 50px
-
 
 
     &-wrap
@@ -364,5 +375,6 @@
 
       & + .pageSectionNote
         margin-top: 40px
+
     .row
       flex-direction: column-reverse
